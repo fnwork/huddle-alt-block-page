@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+/*==== RESUABLE CODE ====*/
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+section{
+    margin: 0 10%;
+    border-radius: 10px;
+    box-shadow: 5px 7px 12px rgba(230, 223, 223, 0.15),
+                -5px -7px 12px rgba(230, 223, 223, 0.15);
+    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-left: 6%;
+    padding-right: 2%;
+    display: flex;
+    align-items: center;
+}
+section img{
+    width: 45%;
+}
+section h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 15px;
+}
+section p{
+    font-size: 16px;
+    color: hsl(208, 11%, 55%);
+    font-weight: 400;
+}
+.grow p,
+.users p{
+    width: 80%;
+    line-height: 25px;
+}
+.nav--bar a:hover, .hero a:hover,
+.cta-box a:hover{
+    opacity: 70%;
+}
+
+/*==== HERO SECTION ====*/
+header{
+    position: relative;
+    background-color:  hsl(193, 100%, 96%);
+    background-image:  url('./images/bg-hero-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 2% 7%;
+    margin-bottom: 10%;
+}
+.nav--bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.nav--bar img{
+    width: 150px;
+}
+.nav--bar a{
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 20px;
+    box-shadow: 5px 7px 10px rgba(78, 74, 102, 0.25);
+}
+
+.hero--section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero h1{
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 15px;
+}
+.hero p{
+    font-size: inherit;
+    font-weight: 400;
+    color:   hsl(192, 100%, 9%);
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.hero a{
+    font-size: 15px;
+    color: hsl(193, 100%, 96%);
+    background-color: hsl(322, 100%, 66%);
+    font-weight: 700;
+    padding: 14px 46px;
+    border-radius: 50px;
+    box-shadow: 5px 7px 10px rgba(78, 74, 102, 0.25);
+}
+.hero--section img{
+    width: 50%;
+}
+/*==== FLOWING CONVERSATION ====*/
+.flow{
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+.flow p{
+    line-height: 25px;
+}
+.flow .content{
+    margin-left: 10%;
+}
+/*==== FOOTER ====*/
+footer{
+    position: relative;
+    margin-top: 20%;
+}
+/*==== CALL TO ACTION BOX ====*/
+.cta-box{
+    position: absolute;
+    top: -7%;
+    left: 50%;
+    width: 60%;
+    height: 220px;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px -7px 12px rgba(197, 195, 207, 0.25);
+}
+.cta-box h3{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.cta-box a{
+    padding: 17px 60px;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 50px;
+    color: hsl(193, 100%, 96%);
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 5px 7px 10px rgba(78, 74, 102, 0.25);
+}
+/*==== MAIN ====*/
+.main{
+    padding: 10% 7% 7%;
+    background-color: hsl(192, 100%, 9%);
+}
+.main .info{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+}
+.left .location div, .contact span,
+.email span{
+    color: hsl(193, 100%, 96%);
+    opacity: 80%;
+    margin-left: 15px;
+}
+.left .location div{
+    display: inline-flex;
+}
+.contact{
+    margin: 20px 0;
+}
+.mid--left ul li a,
+.mid--right ul li a{
+    color: hsl(193, 100%, 96%);
+    opacity: 80%;
+}
+.mid--left ul li:nth-child(2), 
+.mid--right ul li:nth-child(2){
+    margin: 20px 0;
+}
+.right .socials{
+    display: flex;
+    margin-bottom: 60px;
+}
+.right .socials a{
+    margin-right: 15px;
+    font-size: 14px;
+    color: hsl(193, 100%, 96%);
+    font-weight: 400;
+    border: 1px solid hsl(193, 100%, 96%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right .socials a:hover{
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+}
+.right p{
+    position: relative;
+    bottom: -40px;
+    font-size: 14px;
+    color: hsl(193, 100%, 96%);
+    opacity: 80%;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:500px) {
+    .nav--bar img{
+        width: 40%;
+    }
+    .nav--bar a{
+        padding: 5px 20px;
+    }
+    .hero--section{
+        height: auto;
+        flex-direction: column;
+    }
+    .hero--section img{
+        width: 100%;
+    }
+    .hero{
+        padding-top: 20%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .hero h1{
+        font-size: 27px;
+    }
+    section{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 35px;
+        margin: 0 auto;
+    }
+    section img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .grow p,
+    .users p{
+    width: 100%;
+    }
+    .grow, .users{
+        flex-direction: column-reverse;
+    }
+    .users{
+        margin-bottom: 60%;
+    }
+    .cta-box{
+        width: 90%;
+     }
+     .cta-box h3{
+         font-size: 18px;
+     }
+     .cta-box a{
+         padding: 10px 30px;
+     }
+    .main{
+        padding-top: 30%;
+    }
+    .main .info{
+        flex-direction: column;
+    }
+    .location{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .mid--left{
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+    .mid--right{
+        margin-bottom: 50px;
+    }
+    .right .socials{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .right p{
+        text-align: center;
+        bottom: 0;
+    }
+}
